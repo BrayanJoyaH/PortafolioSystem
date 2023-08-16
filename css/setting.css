@@ -1,0 +1,102 @@
+@import 'account.css';
+
+.info > .infoUser > .typeInfo > form > .itemInfo > input, textarea {
+
+	text-align: right;
+	border: none;
+
+}
+
+form {
+
+	scroll-margin-top: 190px;
+}
+
+.info > .infoUser > .typeInfo > form > hr {
+
+	border: .01px solid #ccc;
+
+}
+
+.info > .infoUser > .typeInfo > form > .itemInfo {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin: 12px;
+
+}
+
+input[type="file"] {
+
+	display: none;
+}
+
+input[type="file"]:valid + label[for="file"] {
+
+	color: #fff;
+	border-color: #4e9;
+	background-color: #4e9;
+}
+
+
+label[for="file"] {
+	cursor: pointer;
+	min-width: 50%;
+	border: .2px solid #aaa;
+	border-radius: 5px;
+	margin: 14px;
+	padding: 8px;
+	outline: none;
+}
+
+.info > .infoUser > .typeInfo > form > input[type="submit"],  .info > .infoUser > .typeInfo > a{
+
+	text-decoration: none;
+	background-color: var(--three-color);
+	padding: 10px 20px;
+	margin: 10px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: #000;
+	align-self: flex-end;
+	border: none;
+	cursor: pointer;
+}
+
+.info > .infoUser > .typeInfo > form > input[type="submit"]:hover, .info > .infoUser > .typeInfo> a:hover {
+
+	background-color: var(--three-colorhover);
+}
+
+.info > .infoUser > .typeInfo > form > .itemInfo > a {
+
+	text-decoration: none;
+	color: #000;
+} 
+
+.info > .infoUser > .typeInfo > form > .itemInfo > a:hover {
+
+	text-decoration: .1px underline #4e9;
+	color: #888;
+} 
+
+@media screen and (max-width: 405px) {
+
+	.info > .infoUser > .typeInfo > form > .itemInfo > .dato {
+
+		max-width: 80px;
+		overflow: hidden;
+	}
+
+}
+
+@media screen and (max-width: 350px) {
+
+	.info > .infoUser > .typeInfo > form > .itemInfo > .dato {
+
+		max-width: 50px;
+		overflow: hidden;
+	}
+
+}

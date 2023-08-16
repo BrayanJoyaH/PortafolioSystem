@@ -1,0 +1,33 @@
+@import 'main.css';
+
+.userList {
+
+	padding: 12px;
+	
+}
+
+.userList > .UserInfo {
+
+	border-radius: 8px;
+	border: 1px solid var(--second-color);
+	padding: 12px;
+	margin-top: 12px;
+}
+
+.userList > .UserInfo > .user > details > summary {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.userList > .UserInfo > .user > details > summary > p {
+
+	cursor: pointer;
+
+}
+
+.userList > .UserInfo > .user > details > summary > span > a {
+
+	margin-right: 8px;
+	color: #000;
+}

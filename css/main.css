@@ -1,0 +1,240 @@
+@import 'elements.css';
+
+.principal {
+
+	display: flex;
+	/*min-height: calc(100vh - 180px);
+	max-height: calc(100vh - 180px);*/
+	min-height: calc(100vh - 103px);
+	max-height: calc(100vh - 103px);
+	overflow: hidden;
+}
+
+.principal > .principal-image {
+
+	flex-grow: 1;
+	width: 100%; /*https://placeimg.com/1280/720/nature*/
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.principal > .principal-image > div {
+
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+
+
+.principal > .principal-image > div > p {
+
+	font-size: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;	
+	font-family: 'shizuru';
+}
+
+.introduccion {
+
+	margin-top: 10px;
+	text-align: center;
+	padding: 10px 100px;
+}
+
+.introduccion > .btnContainer {
+
+	display: flex;
+	margin-top: 40px;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+
+}
+
+.introduccion > .btnContainer > a {
+
+	flex-grow: 1;
+	text-decoration: none;
+	color: #000;
+	background-color: var(--second-color);
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 15px;
+
+}
+
+.introduccion > .btnContainer > a:hover {
+
+	background-color: var(--three-colorhover);
+}
+
+.proyectos {
+
+	margin-top: 40px;
+	text-align: center;
+	/*background-color: #fff;*/
+	padding: 30px;
+}
+
+.proyectos > h3 {
+
+	text-transform: uppercase;
+}
+
+.proyectos > .container {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.proyectos > .container > .card {
+
+	flex-grow: 1;
+	width: 300px; 
+	max-width: 300px;
+	border-radius: 10px;
+	overflow: hidden;
+	border: .1px solid #aaa;
+	margin: 8px;
+}
+
+.proyectos > .container > .card > .image {
+
+	width: 100%;
+}
+
+.proyectos > .container > .card > .image > img{
+
+	width: inherit;
+	height: auto;
+	object-fit: cover;
+}
+
+.proyectos > .container > .card > .body {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: baseline;
+	align-items: center;
+	padding: 10px;
+	margin-bottom: 10px;
+
+}
+
+.proyectos > .container > .card > .body > a {
+
+	text-decoration: none;
+	background-color: var(--three-color);
+	padding: 10px 20px;
+	margin: 10px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: #000;
+	align-self: flex-end;
+}
+
+.proyectos > .container > .card > .body > a:hover {
+
+	background-color: var(--three-colorhover);
+}
+
+.proyectos > .btnContainer {
+
+	margin-top: 40px;
+	width: 100%;
+	text-align: right;
+}
+
+.proyectos > .btnContainer > a{
+
+	text-decoration: none;
+	color: #000;
+	background-color: var(--second-color);
+	padding: 10px 20px;
+	border-radius: 5px;
+	align-self: flex-end;
+}
+
+.proyectos > .btnContainer > a:hover {
+
+	background-color: var(--second-colorhover);
+}
+
+.productos {
+
+	margin-top: 0;
+}
+
+.blogInformacion {
+
+	text-align: center;
+	padding: 30px;
+}
+
+.blogInformacion > h3 {
+
+	margin: 20px;
+	text-transform: uppercase;
+
+
+}
+
+.introduccion > p {
+	text-align: justify;
+} 
+
+.introduccion > h1 {
+
+	font-family: cursive, sans-serif;
+	
+}
+
+@media screen and (max-width: 450px) {
+
+	.introduccion {
+
+		padding: 10px 50px;
+	}
+
+	.principal > .principal-image > div > p {
+
+		font-size: 40px;
+	}
+
+	.introduccion > h1 {
+
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+
+	.introduccion {
+
+		padding: 10px 25px;
+	}
+
+	body {
+
+		font-family: "principalFont";
+	}
+}
+
+
+
+
+
+
+
+

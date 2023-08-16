@@ -1,0 +1,32 @@
+@import 'main.css';
+
+.opcionesAdmin {
+
+	text-align: right;
+	padding: 15px;
+	position: sticky;
+	top:180px;
+	
+	
+}
+
+.opcionesAdmin > a {
+
+	color: var(--second-color);
+	
+
+}
+
+.opcionesAdmin > a > i {
+
+	font-size: 32px;
+	
+
+	
+}
+
+.proyectos > .container > .card > a {
+
+	padding: 8px;
+	color: #000;
+}

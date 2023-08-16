@@ -1,0 +1,114 @@
+@import 'main.css';
+
+
+.introduccion > * {
+	margin-top: 18px;
+}
+
+.introduccion > .content {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.introduccion > .content > .Item-content {
+
+
+	flex-shrink: 1;
+	flex-grow: 1;
+	flex-basis: 5%;
+	border:  1px solid #49e;
+	margin:  12px;
+	padding: 18px;
+	border-radius: 10px;
+	min-width: 350px;
+
+
+
+}
+
+.introduccion > .content > .img-des {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border:  none;
+
+}
+
+.introduccion > .content > .img-des > .Item-img-des {
+
+	padding: 8px;
+	
+
+}
+
+
+.introduccion > .content > .img-des > .Item-img-des > img {
+
+	border-radius: 30px;
+	border:  3px solid #030;
+	max-width: 80%;
+	min-width: 250px;
+	height: auto;
+}
+
+.introduccion > .content > .descripcion {
+
+	text-align: justify;
+	align-self: center;
+}
+
+
+@media screen and (max-width: 450px) {
+
+
+	.introduccion > .content {
+
+		font-size: 15px;
+
+	}
+
+	.introduccion > .content > .Item-content {
+
+		min-width: 120px;
+	}
+
+	.introduccion > .content > .img-des > .img {
+
+		text-align: center;
+		padding: 0;
+	}
+
+	.introduccion > .content > .img-des > .Item-img-des > img {	
+
+		min-width: 180px;
+
+	}
+
+}
+
+@media screen and (max-width: 300px) {
+
+
+	body {
+
+		font-family: "principalFont";
+	}
+
+	.introduccion > .content > .img-des > .Item-img-des > img {	
+
+		min-width: 160px;
+
+
+	}
+}
+
+
+
+
+

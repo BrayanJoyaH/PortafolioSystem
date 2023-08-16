@@ -1,0 +1,11 @@
+Options All -Indexes
+ErrorDocument 404 /document/404.php
+ErrorDocument 403 /document/403.php
+ErrorDocument 502 /document/502.php
+
+
+
+
+
+
+

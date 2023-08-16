@@ -1,0 +1,431 @@
+@import 'style.css';
+
+
+body {
+
+	/*margin-top: 77px;*/
+	/*min-height: calc(100vh - 77px);*/
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.navbar {
+
+
+	transition: all 1s ease;
+
+	font-family: "principalFont";
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*margin-top: -77px;*/
+	height: 77px;
+	width: 100%;
+	padding: 0 26px;
+	position: fixed;
+	box-sizing: border-box;
+	/*box-shadow: 0px 2px 50px #ddd;*/
+	z-index: 100;
+	background-color: transparent;
+	
+
+}
+
+.navbar > div {
+
+	display: flex;
+	height: inherit;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar > div > .logo {
+
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar > div > .logo > label {
+
+	display: none;
+	margin-right: 30px;
+}
+
+.navbar > div > .logo > img {
+
+	height: inherit;
+	width: auto;
+}
+
+.navbar > div > ul {
+
+	display: flex;
+}
+
+.navbar > div > ul > li {
+
+	list-style-type: none;
+	margin-right: 32px;
+	cursor: pointer;
+	font-variant: small-caps;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.navbar > div >  ul > li a {
+
+	text-decoration: none;
+	/*color: #000;*/
+	color: #fff;
+
+}
+
+.navbar > div >  ul > li > .items-modal {
+
+	display: none;
+	opacity: 0;
+	list-style-type: none;
+}
+
+
+
+.navbar > div >  ul > li > a:hover {
+
+	/*text-decoration: 3px underline #000;*/
+	text-decoration: 3px underline #fff;
+}
+
+
+
+.navbar > div >  ul > li:hover > .items-modal{
+
+	display: block;
+	opacity: 1;
+	outline: 5px solid transparent;
+	left: 280px;
+	position: absolute;
+	background-color: var(--hex-color);
+	padding: 20px 60px;
+	border-radius: 25px;
+}
+
+.navbar > div >  ul > li:hover > .config {
+
+	left: 600px;
+}
+
+
+
+.navbar > div >  ul > li > .items-modal > li a:hover {
+
+	color: #aaa;
+	/*color: #fff;*/
+}
+
+#btn-search, #btn-navbar, .navbar > .nav-redes > form > #search  {
+
+	display: none;
+
+}
+
+.navbar > .nav-redes > form >  #search {
+
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid #000;
+	margin-left: 12px;
+}
+
+
+.navbar > .nav-redes a {
+
+	/*color: #000;*/
+	color: #fff;
+	margin-right: 8px;
+	font-size: 18px;
+
+}
+
+.navbar > .nav-redes label {
+
+	/*color: #000;*/
+	color: #fff;
+	margin-left: 28px;
+	cursor: pointer;
+	font-size: 18px;
+
+}
+
+.navbar > .nav-redes label:hover, .navbar > .nav-redes a:hover {
+
+	color: #888;
+}
+
+#btn-search:checked + .navbar > .nav-redes > form > #search {
+
+	display: block;
+	position: absolute;
+	top: 27px;
+	left: calc(100% - 280px);
+}
+
+@media screen and (max-width: 900px) {
+
+	.navbar > div > ul {
+
+		display: none;
+	}
+
+	.navbar > div > .logo > label {
+
+		display: block;
+		cursor: pointer;
+		position: relative;
+		z-index: 100;
+		color: #fff;
+	}
+
+	#btn-navbar:checked +  div > ul {
+
+		display: flex;
+		position: fixed;
+		flex-direction: column;
+		top: 0;
+		left: 0;
+		background-color: var(--hex-color);
+		height: 100vh;
+		width: 50vw;
+		padding: 77px 26px;
+		box-shadow: 2px 2px 17px #333;
+	}
+
+	.navbar > div > ul > li {
+
+		margin: 12px 0;
+	}
+
+	.navbar > div > ul > li > a{
+
+		color: #000;
+	}
+
+	.navbar > div >  ul > li:hover > .items-modal{
+
+		display: block;
+		opacity: 1;
+		border: none;
+		position: relative;
+		left: 0;
+		padding: 20px 20px;
+	}
+
+	.navbar > div >  ul > li:hover > .items-modal > li > a{
+
+		color: #000;
+	}
+
+
+}
+
+@media screen and (max-width: 560px) {
+
+	.navbar > div > .logo > img {
+
+		height: 48px;
+		width: auto;
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+
+	.navbar > div > .logo > img {
+
+		display: none;	}
+
+}
+
+@media screen and (max-width: 350px) {
+
+	.navbar > .nav-redes a {
+
+		display: none;
+	}
+
+}
+
+main {
+	flex-grow: 1;
+	min-height: calc(100vh - 77px);
+	min-width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+#contact_form {
+
+	display: flex;
+	flex-direction: column;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	padding: 1.7rem;
+}
+
+#contact_form > input, textarea {
+
+	margin-top: 15px;
+	resize: none;
+	border: .1px solid #888;
+	border-radius: 5px;
+	padding: 8px;
+}
+
+#contact_form > legend {
+
+	text-align: center;
+	font-weight: bolder;
+}
+
+#contact_form > input[type="submit"] {
+
+	background-color: var(--second-color);
+	border: none;
+	cursor: pointer;
+	color: #fff;
+}
+
+#contact_form > input[type="submit"]:hover {
+
+	background-color: var(--second-colorhover);
+}
+
+#contact_form > input[disabled="true"] {
+
+	background-color: var(--disabled-color);
+	cursor: not-allowed;
+}
+#contact_form > input[disabled="true"]:hover {
+
+	background-color: var(--disabled-color);
+}
+
+#contact_form > #msj {
+
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.7rem;
+	background-color: var(--second-color);
+}
+
+footer {
+
+	font-family: "principalFont";
+	background-color: var(--tetra-color);
+	width: 100%;
+	text-align: center;
+	border-bottom: 2px solid var(--tetra-color);
+	padding-top: 35px;
+}
+
+footer > div > a {
+
+	color: #000;
+	font-size: 18px;
+	text-decoration: none;
+	margin: 8px;
+	
+}
+
+footer > div > a:hover {
+
+	color: #888;
+	
+}
+
+footer > .btn-login {
+
+	width: inherit;
+	text-align: right;
+	padding: 12px;
+	box-sizing: border-box;
+}
+
+footer > .redes {
+
+	padding: 12px;
+}
+
+.navbarScroll {
+
+	
+	background-color: var(--main-color);
+	box-shadow: 0px 2px 50px #ddd;
+	
+	
+
+}
+
+.navbarScroll > div >  ul > li a {
+
+	text-decoration: none;
+	color: #000;
+
+}
+
+.navbarScroll > div >  ul > li > .items-modal {
+
+	display: none;
+	opacity: 0;
+	list-style-type: none;
+}
+
+
+
+.navbarScroll > div >  ul > li > a:hover {
+
+	text-decoration: 3px underline #000;
+}
+
+.navbarScroll > .nav-redes > form >  #search {
+
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid #000;
+	margin-left: 12px;
+}
+
+
+.navbarScroll > .nav-redes a {
+
+	color: #000;
+	margin-right: 8px;
+	font-size: 18px;
+
+}
+
+.navbarScroll > .nav-redes label {
+
+	color: #000;
+	margin-left: 28px;
+	cursor: pointer;
+	font-size: 18px;
+
+}
+
+.navbarScroll > .nav-redes label:hover, .navbar > .nav-redes a:hover {
+
+	color: #888;
+}
+
+.navbarScroll > div > .logo > label {
+
+		
+	color: #000;
+}
+
+
+

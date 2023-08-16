@@ -1,0 +1,196 @@
+@import 'main.css';
+
+* {
+	scroll-margin-top: 100px;
+	scroll-behavior: smooth;
+}
+
+
+
+.inicio {
+
+	display: flex;
+	padding: 30px; 
+	flex-direction: row-reverse;
+	justify-content: center;
+
+
+	
+}
+
+.inicio > .item {
+
+	
+	text-align: justify;
+	padding: 40px;
+	
+}
+
+
+.inicio > .item > p {
+
+	text-align: justify;
+}
+
+.inicio > .img {
+
+	font-family: "principalFont";
+	display: flex;
+	flex-direction: column;
+	max-width: 250px;
+	border: 1px solid #49e;
+	border-radius: 10px;
+	position: relative;
+	align-items: center;
+	
+}
+
+.inicio > .item > img {
+	
+	margin-top: 8px;
+	background-color: #ccc;
+	height: 35vh;
+	width: 35vh;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.inicio > .img > .Aside{
+
+	padding: 5px;
+	margin: 12px;
+	display: flex;
+	text-align: left;
+	flex-direction: column;
+	
+
+}
+ 
+.inicio > .img   a {
+
+	margin-top: 6px;
+	text-decoration: none;
+	color: #000;
+
+}
+
+.inicio > .img  a:hover {
+
+	
+	text-decoration: 1px underline #888;
+	color: #888;
+}
+
+
+
+.inicio > .img > .Aside > h2 {
+
+	padding: 28px 0 0 0;
+
+}
+
+.inicio > .img > .Aside > label {
+
+	padding: 28px 0 0 0;
+
+}
+
+.inicio > .img > .end {
+
+	position: absolute;
+	padding: 24px;
+	bottom: 0;
+	right: 0;
+
+}
+
+.inicio > .info > h2 {
+	text-align: center;
+	font-size: 38px;
+	padding: 30px;
+}
+
+.inicio > .info > h3 {
+
+	font-size: 28px;
+	padding: 30px 0;
+}
+
+.containerItems-study {
+
+	border-left: 3px solid var(--three-color);
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.item-study {
+
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 30px;
+	min-width: 30px;
+	border: 5px solid var(--three-color);
+	overflow: hidden;
+}
+
+.containerItems-knowledge {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 18px 0;
+	margin: -5px;
+
+	
+}
+
+.item-knowledge {
+
+	display: flex;
+	border: .1px solid #000;
+	flex-grow: 1;
+	flex-direction: row-reverse;
+	align-items: center;
+	padding: 5px;
+	margin: 5px;
+	justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+
+	.inicio {
+		flex-grow: 1;
+		flex-wrap: wrap;
+	}
+
+	.inicio > .info {
+
+		padding: 10px;
+	}
+
+	.inicio > .img {
+
+		padding-top: 0;
+	}
+
+	a[href="#inicio"] {
+
+		display: none;
+	}
+
+	.inicio > .img {
+
+		width: 100%;
+		max-width: 100%;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+	
+}
+
+
+
