@@ -2,7 +2,7 @@
 
 
 	/*	 Urls 	*/
-	define('SERVERURL', 'http://localhost/miweb/');
+	define('SERVERURL', 'http://localhost/PortafolioSystem/');
 	/*	 App Theme color 	*/
 	define('THEMECOLOR', '#4e9');
 	/*		Meta Seo 	*/
